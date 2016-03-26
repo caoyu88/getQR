@@ -15,7 +15,7 @@
     <script type="text/javascript" src="qrcode.js"></script>
 </head>
 <body class="container">
-    <h3>Get QR code for your favorite site:</h3>
+    <h4>Get QR code for your favorite site:</h4>
 
     <input id="text" class="col-xs-12 col-md-10" type="text" placeholder="enter your url here" />
 
@@ -23,9 +23,12 @@
 
     <button id="getCode" type="button" class="btn btn-info">Get QR Code</button>
 
-    <br><br><br>
-    <div id="qrcode" class=""></div>
-    <br><br><br>
+    <br><br>
+    <div id="qrcode" style="display:none;"></div>
+    <br>
+
+    <iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=ablogaboubigt-20&o=1&p=12&l=ur1&category=amzn_tap_launch&banner=0YMY5QBF5MZQFNV8YRG2&f=ifr&lc=pf4&linkID=5QMTIKVMZVBUPKYK" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;max-width:900px;max-height:600px;" frameborder="0"></iframe>
+
 
 
 <script type="text/javascript">
@@ -44,6 +47,7 @@
         }
 
         qrcode.makeCode(elText);
+        $('#qrcode').fadeIn();
     }
 
 
